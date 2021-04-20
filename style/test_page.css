@@ -52,7 +52,13 @@
    height: 200px;
    align-self: center;
    background-image: url(https://sun9-5.userapi.com/impg/2nj91u4yDWkCN0soPSq1KKJHO-rvW3311BxM6Q/Dasf6uSKHxY.jpg?size=1280x1278&quality=96&sign=264414c8e308fe69b658dbc40e5a1940&type=album);
-   background-size: 100% 100%;
+   background-size: 100% 90%;
    justify-content: center;
+   background-repeat: no-repeat;
    align-items: center;
+}
+.personal .person span{
+   height: 10%;
+   widows: 100%;
+   margin-top: 130%;
 }

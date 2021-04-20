@@ -8,6 +8,7 @@ var f5 = document.getElementById("f5");
 var f6 = document.getElementById("f6");
 var f7 = document.getElementById("f7");
 var f8 = document.getElementById("f8");
+var f2t = document.getElementById("f2_text");
 var fcont = document.getElementById("fcont");
 // Функции смена стилей
 function active_1(obj) {
@@ -24,11 +25,15 @@ function disactive_1(obj) {
 function active_2(obj) {
    f2.style.width = "20%";
    f2.style.height = "300px";
+   f2t.innerHTML = "Дмитрий Коршунов";
+   f2t.style.fontSize = "20px";
+   f2t.style.transition = "0.2s";
    f2.style.transition = "0.2s";
    f2.style.backgroundImage = "url('https://sun9-22.userapi.com/impg/ikIzHc7KMLfeNnVKZxkKWQUI6-MWfHeU6Gm3kQ/mNxH_15lTkk.jpg?size=1280x1278&quality=96&sign=3dd8c5af749f1e77ea22a80bf0956451&type=album')";
 }
 function disactive_2(obj) {
    f2.style.width = "12%";
+   f2t.innerHTML = "Первый человек";
    f2.style.height = "196px";
    f2.style.backgroundImage = "url('https://sun9-5.userapi.com/impg/2nj91u4yDWkCN0soPSq1KKJHO-rvW3311BxM6Q/Dasf6uSKHxY.jpg?size=1280x1278&quality=96&sign=264414c8e308fe69b658dbc40e5a1940&type=album')";
 }
