@@ -1,0 +1,38 @@
+.state h2{
+   font-size: 33px;
+   margin: 50px 0 5px 0;
+}
+
+.state__important{
+   width: 100%;
+   border-radius: 1px solid red;
+   margin-bottom: 100px;
+}
+.state__important span{
+   color: red;
+   font-size: 30px;
+   float: left;
+   width: 5%;
+}
+.state__important p{
+   font-size: 25px;
+}
+.state__markers ul{
+   width: 100%;
+   margin: 10px 0 10px 0;
+   display: flex;
+   flex-direction: row;
+}
+.state__markers li{
+   width: 15%;
+   font-weight: 700;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 30px;
+   margin-left: 2%;
+}
+.state__important a{
+   margin-top: 50px; 
+}
