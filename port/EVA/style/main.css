@@ -5,12 +5,18 @@ a{color: black;text-decoration: none;}
 #Important{
    color: red;
    font-weight: 900;}
-
+   @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+body{
+   font-family: 'Forum', cursive;
+   background-size: 100% 100%;
+   
+}
 .wrapper{
-   background: lightcyan;
    width: 80%;
    margin: 0 auto;
    min-height: 600px;}
+
+
 .header{
    height: 80px;
    width: 100%;
@@ -18,20 +24,51 @@ a{color: black;text-decoration: none;}
    background: white;
    border-top: none;
    box-shadow: 0px 4px 5px  grey;}
+
+.menu{
+   width: 100%;
+   height: 40px;
+   background: white;
+   margin-top: 10px;
+}
+.menu ul{
+   width: 80%;
+   margin: 0 auto;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+}
+.menu ul li{
+   width: 10%;
+   margin-left: 2%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.2s;
+}
+.menu ul li:hover{
+   border-bottom: 1px solid blue;
+   transition: 0.2s;
+}
+
+
+
 .contant{
    width: 70%;
    margin-left: 2%;
    margin-top: 30px;
    height: auto;
    display: flex;
-   justify-content: center;
-   min-height: 100px;
-   background: white;
-   box-shadow: 3px 6px 5px  grey;}
+   flex-direction: column;
+   align-items: center;
+   min-height: 100px;background: rgb(255,255,255);
+   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 4%, rgba(255,255,255,1) 96%, rgba(255,255,255,0) 100%);}
 
 .state{
    width: 90%;
+   background: none;
    margin-top: 20px;
+   min-height: 900px;
    height: auto;}
 .state__title{
    width: 50%;
