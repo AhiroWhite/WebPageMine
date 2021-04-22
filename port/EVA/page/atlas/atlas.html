@@ -18,9 +18,10 @@
             Домой
          </header>
       </a>
+
       <div class="menu">
          <ul>
-            <li style="border-bottom: 1px solid blue;">Атлас</li>
+            <li style="border-bottom: 1px solid rgb(0, 81, 255);">Атлас</li>
             <li>Проекты</li>
             <li>Пусто</li>
             <li>Пусто</li>
@@ -30,68 +31,30 @@
          </ul>
       </div>
 
-      <div class="contant" style="height: 600px;">
+      <div class="contant" style="height: 600px;" id="atlas__page">
+
+         <div id="atlas__title">Атлас</div>
+         <div class="navpanel__title">Навигация по Атласу</div>
          <div class="navpanel">
             <ul>
-               <li id="map0" onclick="map1(this)">
-                  Шаблон карты
-               </li>
-               <li id="map1" onclick="map2(this)">
-                  Карта территорий
-               </li>
-               <li id="map2" onclick="map3(this)">
-                  Карта суши
-               </li>
+               <span>Шаблоны</span>
+               <li>Шаблон Карты</li>
+               <li>Карта территорий</li>
+               <li>Карта Суши</li>
+            </ul>
+            <ul>
+               <span>Климат</span>
+               <li>Зимний</li>
+               <li>Весенний</li>
+               <li>Летний</li>
+               <li>Осенний</li>
             </ul>
          </div>
-         <div class="map" id="map">
-            <div class="dowland"> <a target="_blank" href="img/макет.jpg" download="" id="dowl1"
-                  style="display: none;"><span>Сохранить</span></a>
-            </div>
-            <div class="dowland"> <a target="_blank" href="img/территории.jpg" download="" id="dowl2"
-                  style="display: none;"><span>Сохранить</span></a>
-            </div>
-            <div class="dowland"> <a target="_blank" href="img/Сушаморе.jpg" download="" id="dowl3"
-                  style="display: none;"><span>Сохранить</span></a>
-            </div>
-         </div>
+
       </div>
-      <script>
-         var npb1 = document.getElementById("map0")
-         var npb2 = document.getElementById("map1")
-         var npb3 = document.getElementById("map2")
-         var map = document.getElementById("map")
-         function map1(obj) {
-            map.style.backgroundImage = ("url('img/макет.jpg')")
-            map.style.backgroundSize = ("100% 100%")
-            npb1.style.border = "2px solid blue"
-            npb2.style.border = "none"
-            npb3.style.border = "none"
-            document.getElementById("dowl1").style.display = "block";
-            document.getElementById("dowl2").style.display = "none";
-            document.getElementById("dowl3").style.display = "none";
-         }
-         function map2(obj) {
-            map.style.backgroundImage = ("url('img/территории.jpg')")
-            map.style.backgroundSize = ("100% 100%")
-            npb2.style.border = "2px solid blue"
-            npb1.style.border = "none"
-            npb3.style.border = "none"
-            document.getElementById("dowl2").style.display = "block";
-            document.getElementById("dowl1").style.display = "none";
-            document.getElementById("dowl3").style.display = "none";
-         }
-         function map3(obj) {
-            map.style.backgroundImage = ("url('img/Сушаморе.jpg')")
-            map.style.backgroundSize = ("100% 100%")
-            npb2.style.border = "none"
-            npb1.style.border = "none"
-            npb3.style.border = "2px solid blue"
-            document.getElementById("dowl3").style.display = "block";
-            document.getElementById("dowl2").style.display = "none";
-            document.getElementById("dowl1").style.display = "none";
-         }
-      </script>
+   </div>
+   <script>
+   </script>
 </body>
 
 </html>

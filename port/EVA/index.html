@@ -5,22 +5,41 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>EVA PROJECT</title>
+   <title>EVA</title>
    <link rel="stylesheet" href="style/media.css">
    <link rel="stylesheet" href="style/main.css">
 </head>
 
-<body style=" background-image: url(img/Фэнтези-природа-арты-и-обои-самые-лучшие-23.jpg); ">
+<body>
 
    <div class="wrapper">
+
+      <div class="mobmenu" id="mobmenu">
+         <span class="mobmenu__close" onclick="document.getElementById('mobmenu').style.display ='none'">X</span>
+         <ul>
+            <a href="page/atlas/atlas.html">
+               <li>Атлас</li>
+            </a>
+            <li>Проекты</li>
+            <li>Пусто</li>
+            <li>Пусто</li>
+            <li>Пусто</li>
+            <li>Пусто</li>
+            <li>Пусто</li>
+         </ul>
+      </div>
+
       <header class="header">
          <div class="header__logo" id="test">Логотип</div>
          <div class="header__login">Вход/выход</div>
          <div class="header__lang">ENG / RUS</div>
+         <div class="header__mobailmenu" onclick="document.getElementById('mobmenu').style.display ='block'">
+            open
+         </div>
       </header>
+
       <div class="menu">
          <ul>
-
             <li><a href="page/atlas/atlas.html">Атлас</a></li>
             <li>Проекты</li>
             <li>Пусто</li>
@@ -30,34 +49,31 @@
             <li>Пусто</li>
          </ul>
       </div>
+
       <div class="contant">
-         <div class="state">
-            <h1 class="state__title">Загружена пробная карта!</h1>
-            <h2 class="state__version">A_0.0.0.1</h2>
-            <h3 class="state__date">21.04.2021</h3>
-            <img src="img/Шаблон чб.png" alt="" class="state__img">
-            <div class="state__text">
-               <h2>Добавлены 3 карты!</h2>
-               <p>Добавлен раздел атлас в меню сайта</p>
-               <p>
-                  Добавлены три карты
-               <ul>
-                  <li>Шаблон Карты чб</li>
-                  <li>Политическая карта занятых территорий</li>
-                  <li>Карта суши</li>
-               </ul>
-               </p>
-               <p id="Important">
-                  Обязательно зайдите и посмотрите, есть просьба!
-               </p>
+         <a href="page/atlas/atlas.html">
+            <div class="state">
+               <div class="state__title">
+                  <div class="title__name">Шаблоны уже на сайте</div>
+                  <div class="title__date">22.04.2021</div>
+               </div>
+               <div class="state__contant">
+                  <img src="page/atlas/img/макет.jpg" alt="" class="contant__img">
+                  <div class="contant__text">
+                     <p>На сайт в меню добавлена вкладка "Атлас"</p>
+                     <p>Добавлены три карты, "Шаблон карты","Карт территорий","Карта Суша/Вода"!</p>
+                     <span class="contant__showmore"
+                        onmouseover="document.getElementById('showmore').innerHTML= 'Смотреть далее...'"
+                        onmouseout="document.getElementById('showmore').innerHTML= 'Смотреть далее'"
+                        id="showmore">Смотреть далее</span>
+
+                  </div>
+               </div>
             </div>
-            <div class="state__showmore">
-               <button><a href="page/atlas/atlas.html">Просмотреть изменения</a></button>
-            </div>
-         </div>
+         </a>
+
       </div>
    </div>
-
 </body>
 
 </html>
