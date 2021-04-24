@@ -14,6 +14,11 @@
 
    <div class="wrapper">
 
+      <!-- Шапка мобильная версия -->
+      <div class="mobailmenu">
+         <div class="mobailmenu__logo"></div>
+         <div class="mobailmenu__menu" onclick="document.getElementById('mobmenu').style.display ='block'">Open</div>
+      </div>
       <div class="mobmenu" id="mobmenu">
          <span class="mobmenu__close" onclick="document.getElementById('mobmenu').style.display ='none'">X</span>
          <ul>
@@ -28,28 +33,25 @@
             <li>Пусто</li>
          </ul>
       </div>
+      <!-- Конец шапки -->
 
+      <!-- Шапка пк версия -->
       <header class="header">
-         <div class="header__logo" id="test">Логотип</div>
-         <div class="header__login">Вход/выход</div>
-         <div class="header__lang">ENG / RUS</div>
-         <div class="header__mobailmenu" onclick="document.getElementById('mobmenu').style.display ='block'">
-            open
+         <div class="header__menu">
+            <ul>
+               <li><a href="page/atlas/atlas.html">Атлас</a></li>
+               <li>Проекты</li>
+               <li>Пусто</li>
+               <li>Пусто</li>
+               <li>Пусто</li>
+               <li>Пусто</li>
+               <li>Пусто</li>
+            </ul>
          </div>
       </header>
+      <!-- Конец шапки -->
 
-      <div class="menu">
-         <ul>
-            <li><a href="page/atlas/atlas.html">Атлас</a></li>
-            <li>Проекты</li>
-            <li>Пусто</li>
-            <li>Пусто</li>
-            <li>Пусто</li>
-            <li>Пусто</li>
-            <li>Пусто</li>
-         </ul>
-      </div>
-
+      <!-- Контент -->
       <div class="contant">
          <a href="page/atlas/atlas.html">
             <div class="state">
@@ -57,12 +59,12 @@
                   <div class="title__name">Шаблоны уже на сайте</div>
                   <div class="title__date">22.04.2021</div>
                </div>
-               <div class="state__contant">
-                  <img src="page/atlas/img/макет.jpg" alt="" class="contant__img">
-                  <div class="contant__text">
+               <div class="state__box">
+                  <img src="page/atlas/img/макет.jpg" alt="" class="state__img">
+                  <div class="state__text">
                      <p>На сайт в меню добавлена вкладка "Атлас"</p>
                      <p>Добавлены три карты, "Шаблон карты","Карт территорий","Карта Суша/Вода"!</p>
-                     <span class="contant__showmore"
+                     <span class="state__showmore"
                         onmouseover="document.getElementById('showmore').innerHTML= 'Смотреть далее...'"
                         onmouseout="document.getElementById('showmore').innerHTML= 'Смотреть далее'"
                         id="showmore">Смотреть далее</span>
@@ -73,6 +75,7 @@
          </a>
 
       </div>
+      <!-- Конец контанта -->
    </div>
 </body>
 
