@@ -1,0 +1,88 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+.wrapper{
+   max-width: 100%;
+   overflow: none;
+}
+
+.container{
+   width: 970px;
+   margin: 0 auto;
+   font-family: Ubuntu;
+}
+@font-face {
+   font-family: Ubuntu; 
+   src: url(../fonts/Ubuntu-L.ttf);
+   font-weight: 200;
+  }
+
+.header{
+   width: 100%;
+   height: 120px;
+   font-family: Ubuntu;
+   float: left;}
+.header__logo{max-height: 120px;float: left; width: 30%}
+.header__menu{
+   width: 70%;
+   height: 120px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;}
+.menu__order{
+   padding: 5px 10px 5px 10px;
+   margin-right: 15px;
+   background: #097E8F;
+   font-family: Ubuntu;
+   font-size: 15px;
+   color: white;}
+.menu__lang{
+   color: #AEAEAC;
+   font-size: 18px;}
+.menu__lang span{margin: 0 2px 0 2px;}
+
+
+.nav{
+   width: 100%;
+   height: 70px;
+   margin-top: 20px;
+   float: left;
+   border-bottom: 2px solid rgb(192, 192, 192);}
+.nav__point{
+   height: 45px;
+   margin-top: 25px;
+   padding: 0 7px 0 7px;
+   font-size: 14px;
+   color: rgb(155, 155, 155);
+   display: flex;
+   align-items: center;
+   float: left; }
+.nav .first{
+   padding: 0 3px 0 1px;}
+.nav__point:hover{
+   margin-top: 25px;
+   color: rgb(78, 78, 78);
+   border-bottom: 2px solid grey;}
+
+
+.contant{
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+   padding: 10px 0 10px 0;
+   float: left;
+}
+.contant__albom{
+   width: 322px;
+   height: 320px;
+   margin-bottom: 2px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+   background: grey;
+   float: left;}
+.contant .left{margin-right: 2px;}
+#first{background-size: 100% 100%;background-image: url(../img/galaktika1233100_3360x2100.jpg);}
+#second{background-size: 100% 100%;background-image: url(../img/galaktika_tumannost_zvezdy_153100_3360x2100.jpg);}
