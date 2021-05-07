@@ -37,6 +37,29 @@
    width: 10%;
    background: white;
    height: 100%;
-   flex-directi
+   
    align-items: center;
+}
+
+ul{
+   width: 100%;
+   height: 100%;
+   list-style: none;
+   text-decoration: 0;
+}
+
+ul li:nth-child()nth-child(){
+   width: 100%;
+   height: 40px;
+   padding-left: 10px;
+   display: flex;
+   align-items: center;
+   color: white;
+   background: #2980B9;
+   border-bottom: 2px solid #2C3E50;
+}
+
+#active{
+   background: #1ABC9C;
+   border-bottom: 1px solid #2ECC71;
 }
