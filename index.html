@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokin</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/лого.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- блок обратного звонка -->
+    <div class="recallbg">
+        <div class="wrapper recall">
+            <div class="recall1">
+                <span class="exit " onclick="recallclose()">X</span>
+                <h1>Оставьте ваш номер и мы перезвоним</h1>
+                <h2></h2>
+                <input type="tel" name="recall" id="recalltel" placeholder="+7(__)-___-__-__">
+                <input type="submit" id="recallsub" value="Оставить номер" onclick="recallnext()">
+            </div>
+            <div class="recall2">
+                <img src="" alt="">
+                <h1>Спасибо что оставили номер</h1>
+                <h2>Мы обязательно перезвоним</h2>
+                <input type="button" value="Вернуться на главную" onclick="recallclose()">
+            </div>
+        </div>
+    </div>
+    <!-- Конец блока обратного звонка -->
+    <!-- Шапка -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__logo">
+                <img src="img/лого.png" alt="">
+            </div>
+            <div class="header__menu">
+                <ul>
+                    <a href="#about" >
+                        <li>О нас</li>
+                    </a>
+                    <a href="#catalog">
+                        <li>Каталог</li>
+                    </a>
+                    <a href="#news">
+                        <li>Новости</li>
+                    </a>
+                    <a href="#footer">
+                        <li>Контакты</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="header__phone">+7 (029) 153 11 47</div>
+            <div class="header__contact">
+                <a href="#" onclick="racallopen()">Обратный звонок</a>
+            </div>
+        </div>
+    </header>
+    <!-- Конец шапки -->
+    <!-- блока show -->
+    <div class="content">
+        <div class="wrapper show">
+            <div class="content-small">
+                <h4>СИЛА ПРИРОДЫ</h4>
+                <h1>Органическая косметика премиум качества</h1>
+                <h5>Производство в Австралии -<br> на самом чистом в мире континете</h5>
+                <a href="#catalog"><div class="btn-look center-all">Смотреть каталог</div></a>
+            </div>
+            <div class=" content-small">
+                <img src="img/png1.PNG" width="100%"  alt="" id="show">
+            </div>
+            
+                <div class="content-small control1">
+                    <div class="arrow center-all" onclick="back()">
+                        < 
+                    </div> <div class="arrow center-all" onclick="next()">
+                        > 
+                    </div>
+                </div>
+                <div class="content-small control2">
+                    <div class="point p1 point_active"></div>
+                    <div class="point p2"></div>
+                    <div class="point p3"></div>
+                    <div class="point p4"></div>
+                    <div class="point p5"></div>
+                </div>
+            
+        </div>
+    </div>
+    </div>
+    <!-- Конец блока show -->
+    <!-- блок Популярное -->
+    
+    <!-- Конец блока Популярное -->
+    <!-- блок О нас -->
+    <div class="content about-bg" id="about">
+        <div class="wrapper about">
+            <div class="content-small">
+                <h4>О НАС</h4>
+                <h1>Философия нашего бренда</h1>
+                <h5>
+                    <p>
+                        Наша косметика не только чистая но и действенная <br> 
+                        Мы разработали особый биохимический подход, <br>
+                        В каждом средстве содержатся природные<br>
+                        ингредиенты, эффективность которых доказана <br>
+                        клиническими исследованиями и научными <br>
+                       публикациями. Поэтому наша косметика отлично <br>
+                        справляется с самыми разными проблемами кожи. <br>
+                    </p>
+                    <p style="margin-top: 20px;">
+                        Наши средства ежегодно получают призы <br>
+                        на престижных международных косметических <br>
+                        конкурсах. <br>
+                    </p>
+                    
+                </h5>
+                
+            </div>
+            <div class="content-small">
+                <img src="img/about.png" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="wrapper about_under ">
+            <ul >
+                <li>
+                    <h2>Только натуральные составы</h2>
+                    <h3>
+                        Мягкое воздействие на кожу. <br>
+                        без нарушений кислотно-щелочного <br>
+                        баланса.
+                    </h3>
+                </li>
+                <li>
+                    <h2>Свое Производство</h2>
+                    <h3>
+                        Позволяет отследить и контролировать <br>
+                        весь цикл изготовления.
+                    </h3>
+                </li>
+                <li>
+                    <h2>Защита окружающей среды</h2>
+                    <h3>
+                        Мы не тестируем на животных <br>
+                        и выпускаем в переробатываемой <br>
+                        упаковке. 
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Конец блока О нас -->
+    <!-- Блок Каталог -->
+    <div class="content" id="catalog">
+        <div class="wrapper catalog">
+            <h2>Каталог</h2>
+            <ul>
+                <li>
+                    <img src="img/news1.png" width="100%" alt="">
+                    <h3>Крем для сухой кожи</h3>
+                    <span></span>
+                    <div class="price">
+                        <a href="">280р</a>
+                        <div class="btn-add center-all">+</div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/news1.png" width="100%" alt="">
+                    <h3>Органический тонер мист без парабенов и алкоголя</h3>
+                    <span></span>
+                    <div class="price">
+                        <a href="">250р</a>
+                        <div class="btn-add center-all">+</div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/news1.png" width="100%" alt="">
+                    <h3>Ночной крем с маслом шиповника</h3>
+                    <span></span>
+                    <div class="price">
+                        <a href="">420р</a>
+                        <div class="btn-add center-all">+</div>
+                    </div>
+                </li>
+                <li class="lastli">
+                    <img src="img/news1.png" width="100%" alt="">
+                    <h3>Очищающий крем</h3>
+                    <span></span>
+                    <div class="price">
+                        <a href="">150р</a>
+                        <div class="btn-add center-all">+</div>
+                    </div>
+                </li>
+                
+                <li>
+                    <img src="img/news1.png" width="100%" alt="">
+                    <h3>Ночной крем</h3>
+                    <span></span>
+                    <div class="price">
+                        <a href="">350р</a>
+                        <div class="btn-add center-all">+</div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/news1.png" width="100%" alt="">
+                    <h3 >Серум для области вокруг глаз</h3>
+                    <span ></span>
+                    <div class="price">
+                        <a href="">250р</a>
+                        <div class="btn-add center-all">+</div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/news1.png" width="100%" alt="">
+                    <h3 >Органическое масло шиповника для жирной и комбинированной кожи</h3>
+                    <span></span>
+                    <div class="price">
+                        <a href="">400р</a>
+                        <div class="btn-add center-all">+</div>
+                    </div>
+                </li>
+                <li class="lastli">
+                    <img src="img/news1.png" width="100%" alt="">
+                    <h3>Мицелярная вода</h3>
+                    <span></span>
+                    <div class="price">
+                        <a href="">180р</a>
+                        <div class="btn-add center-all">+</div>
+                    </div>
+                </li>
+
+                <div class="showmore center-all">
+                    <span class="btn-show" onclick="show()">
+                        Смотреть ещё
+                    </span>
+                </div>
+
+                <div class="catalog_hidded">
+                    <li>
+                        <img src="img/news1.png" width="100%" alt="">
+                        <h3>Название товара</h3>
+                        <span></span>
+                        <div class="price">
+                            <a href="">Цена</a>
+                            <div class="btn-add center-all">+</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/news1.png" width="100%" alt="">
+                        <h3>Название товара</h3>
+                        <span></span>
+                        <div class="price">
+                            <a href="">Цена</a>
+                            <div class="btn-add center-all">+</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/news1.png" width="100%" alt="">
+                        <h3>Название товара</h3>
+                        <span></span>
+                        <div class="price">
+                            <a href="">Цена</a>
+                            <div class="btn-add center-all">+</div>
+                        </div>
+                    </li>
+                    <li class="lastli">
+                        <img src="img/news1.png" width="100%" alt="">
+                        <h3>Название товара</h3>
+                        <span></span>
+                        <div class="price">
+                            <a href="">Цена</a>
+                            <div class="btn-add center-all">+</div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <img src="img/news1.png" width="100%" alt="">
+                        <h3>Название товара</h3>
+                        <span></span>
+                        <div class="price">
+                            <a href="">Цена</a>
+                            <div class="btn-add center-all">+</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/news1.png" width="100%" alt="">
+                        <h3>Название товара</h3>
+                        <span></span>
+                        <div class="price">
+                            <a href="">Цена</a>
+                            <div class="btn-add center-all">+</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/news1.png" width="100%" alt="">
+                        <h3>Название товара</h3>
+                        <span></span>
+                        <div class="price">
+                            <a href="">Цена</a>
+                            <div class="btn-add center-all">+</div>
+                        </div>
+                    </li>
+                    <li class="lastli">
+                        <img src="img/news1.png" width="100%" alt="">
+                        <h3>Название товара</h3>
+                        <span></span>
+                        <div class="price">
+                            <a href="">Цена</a>
+                            <div class="btn-add center-all">+</div>
+                        </div>
+                    </li>
+                </div>
+                <div class="hidemore center-all">
+                    <span class="btn-show" onclick="hide()">
+                        Скрыть
+                    </span>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- Конец блока Каталог -->
+    
+    <!-- Блок Новости -->
+    <div class="content news-bg" id="news">
+        <div class="wrapper news">
+            <h4>НОВОСТИ</h4>
+            <h2>Наши последние события</h2>
+            <ul>
+                <li >
+                    <img src="img/news1.png" width="100%" alt="" >
+                    <h4>Новая линейка по уходу за кожей склонной к куперозу</h4>
+                    <h5>Разработанная нашими экспертами специальная формула которая позволяет более эффективно бороться куперозом...</h5>
+                    <div class="btn-readmore" style="margin-top: 30px;">Читать полностью</div>
+                </li>
+                <li >
+                    <img src="img/news2.png" width="100%" alt="" >
+                    <h4>Парфюмированные продукты для тела</h4>
+                    <h5>Мы пытаемся улучшить наши продукты и сделать их более приятными для вашего использования, для этого мы специально...</h5>
+                    <div class="btn-readmore" style="margin-top: 13px;">Читать полностью</div>
+                </li>
+                <li >
+                    <img src="img/news3.png" width="100%" alt="" >
+                    <h4>Раздаем подарки</h4>
+                    <h5>Весь следующий месяц мы проводим конкурс по результатам которого мы подарим пять наборов нашей...</h5>
+                    <div class="btn-readmore" style="margin-top: 56px;">Читать полностью</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Конец блока Новости -->
+    <!-- Блок подписка -->
+    <div class="content">
+        <div class="wrapper sub">
+            <h3>Подпишитесь на рассылку</h3>
+            <h4>Будьте всегда в курсе специальных предложений</h4>
+            <div class="sub__form">
+                <form action="post" >
+                    <input type="email" placeholder="Введите почту">
+                    <input type="button" class="sub-btn" value="Подписаться">
+                </form>
+             </div>
+            <h4 style="font-size: 13px;">Оформаляя подписку, вы соглашаетесь с условием <span>Политики обработки персональных данных</span>.</h4>
+        </div>
+    </div>
+    <!-- конец блока подписка -->
+    <div class="content footer-bg" id="footer">
+        <div class="wrapper footer">
+            <ul class="footer__nav">
+                <li class="nav__item">
+                    <img src="" alt="">
+                    <span></span>
+                </li>
+                <li class="nav__item"></li>
+                <li class="nav__item"></li>
+                <li class="nav__item"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="styles/jquery.js"></script>
+    <script src="styles/index.js"></script>
+</body>
+
+</html>
