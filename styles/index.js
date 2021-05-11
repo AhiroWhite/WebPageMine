@@ -1,3 +1,16 @@
+// Скрипт подписки
+let sub = function(){
+    $('.sub').hide(300);
+}
+// Скрипт кнопки купить
+$('.btn-add').click(function(){
+    $(this).width(100);
+    $(this).css('font-size','13px')
+    $(this).removeClass('btn-add');
+    $(this).text('В корзине');
+    $(this).addClass('click');
+})
+
 // Скрипт окна обратной связи
 let  racallopen = function() {
     $('.recallbg').css('display','block');
@@ -49,27 +62,27 @@ var next = function(){
         console.log(point);
     }
     if(point == 1){
-        $('#show').attr("src","img/png1.PNG");
+        $('#show').attr("src","img/first1.jpg");
         $('.point').removeClass("point_active");
         $('.p1').addClass("point_active");
     }
     if(point == 2){
-        $('#show').attr("src","img/png2.png");
+        $('#show').attr("src","img/first2.jpg");
         $('.point').removeClass("point_active");
         $('.p2').addClass("point_active");
     }
     if(point == 3){
-        $('#show').attr("src","img/png3.png");
+        $('#show').attr("src","img/first3.jpg");
         $('.point').removeClass("point_active");
         $('.p3').addClass("point_active");
     }
     if(point == 4){
-        $('#show').attr("src","img/png4.png");
+        $('#show').attr("src","img/first4.jpg");
         $('.point').removeClass("point_active");
         $('.p4').addClass("point_active");
     }
     if(point == 5){
-        $('#show').attr("src","img/png5.png");    
+        $('#show').attr("src","img/first5.jpg");    
         $('.point').removeClass("point_active");
         $('.p5').addClass("point_active");
     }
@@ -84,27 +97,32 @@ var back = function(){
         console.log(point);
     }
     if(point == 1){
-        $('#show').attr("src","img/png1.PNG");
+       
+        $('#show').attr("src","img/first1.jpg");
         $('.point').removeClass("point_active");
         $('.p1').addClass("point_active");
     }
     if(point == 2){
-        $('#show').attr("src","img/png2.png");
+        
+        $('#show').attr("src","img/first2.jpg");
         $('.point').removeClass("point_active");
         $('.p2').addClass("point_active");
     }
     if(point == 3){
-        $('#show').attr("src","img/png3.png");
+       
+        $('#show').attr("src","img/first3.jpg");
         $('.point').removeClass("point_active");
         $('.p3').addClass("point_active");
     }
     if(point == 4){
-        $('#show').attr("src","img/png4.png");
+   
+        $('#show').attr("src","img/first4.jpg");
         $('.point').removeClass("point_active");
         $('.p4').addClass("point_active");
     }
     if(point == 5){
-        $('#show').attr("src","img/png5.png");    
+     
+        $('#show').attr("src","img/first5.jpg");    
         $('.point').removeClass("point_active");
         $('.p5').addClass("point_active");
     }

@@ -57,101 +57,93 @@ a{color: black; text-decoration: none;}
     background: #18493f;}
 .test{outline: 1px solid red;}
 .test2{outline: 1px solid green;}
-
+.click{
+    height: 30px;
+    margin-top: 10px;
+    background: #46A18D;
+    color: white;
+    transition: 0.2s;
+    font-weight: 100;
+    float: right;
+}
 
 /* Блок обратного звонка */
 .recallbg{
-    display: none;
-    position: fixed;
     width:100vw;
-    background: rgba(0, 0, 0, 0.315);
     height: 100vh;
-}
+    background: rgba(0, 0, 0, 0.315);
+    display: none;
+    position: fixed;}
 .recall{
     height: 30%;
     width: 30%;
     margin-top: 15%;
-    background: white;
-}
+    background: white;}
 .recall1 .exit{
-    padding: 10px 20px 10px 20px;
     width: auto;
-    float: right;
     height: auto;
-}
-
-
+    padding: 10px 20px 10px 20px;
+    float: right;}
 .recall1 h1{
     width: 100%;
-    float: left;
+    margin-top: 10px; 
     font-size: 21px;
-    margin-top: 10px;
     text-align: center;
     color: #54524C;
-}
+    float: left;}
 #recalltel{
     width: 80%;
     height: 30px;
-    float: left;
     margin: 30px 0 10px 10%;
     border: 1px solid #2C947D;
-}
+    float: left;}
 #recalltel::placeholder{
-    padding-left: 10px;
-}
+    padding-left: 10px;}
 #recalltel:focus{
     padding-left: 10px;
-    font-family: 'Roanne';
-}
+    font-family: 'Roanne';}
 #recallsub{
     width: 30%;
-    margin: 20px 0 0 35%;
     height: 35px;
-    float: left;
+    margin: 20px 0 0 35%;
+    border: 1px solid #2C947D;
     background: white;
     color: #2C947D;
-    border: 1px solid #2C947D;
     transition: 0.2s;
-}
+    float: left;}
 #recallsub:hover{
     background: #2C947D;
     color: white;
-    transition: 0.2s;
-}
+    transition: 0.2s;}
 .recall2{
-    display: none;
-}
+    display: none;}
 .recall2 h1{
     width: 100%;
-    float: left;
-    font-size: 25px;
     margin-top: 50px;
+    font-size: 25px;
     text-align: center;
     color: #54524C;
-}
+    float: left;}
 .recall2 h2{
     width: 100%;
-    float: left;
-    font-size: 11px;
     margin-top: 10px;
+    float: left;
     text-align: center;
     color: black;
-}
+    font-size: 11px;}
 .recall2 input{
     width: 35%;
-    margin: 40px 0 0 33%;
     height: 35px;
-    float: left;
+    margin: 40px 0 0 33%;
+    border: 1px solid #2C947D;
     background: white;
     color: #2C947D;
-    border: 1px solid #2C947D;
     transition: 0.2s;
-}
+    float: left;}
 .recall2 input:hover{
     background: #2C947D;
     color: white;
-    transition: 0.2s;
-}
+    transition: 0.2s;}
 /* Конец блока обратного звонка */
 /* Начало шапки */
 .header{
@@ -221,6 +213,41 @@ a{color: black; text-decoration: none;}
     margin: 10px 0 15px 0;}
 .show .btn-look{
     margin-top: 50px;}
+/* Блок популярное */
+.popular{
+    height: auto;
+   
+}
+.popular h1{
+    width: 100%;
+    font-weight: 100;
+    font-size: 30px;
+    color: #57534b;
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+.popular ul{
+    list-style: none;
+    display: flex;
+}
+.popular ul li{
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+.popular img{
+    max-width: 100%;
+    height: 200px;
+}
+.popular li h3{
+    font-weight: 300;
+    height: 65px;
+    font-size: 14px;}
+    .popular li span{
+    min-width: 100%;
+    border-top: 1px solid silver;
+    float: left;}
+
+/* Конец блока популярное */
 /* Контроль панель */
 .control1{
     display: block;
@@ -277,10 +304,13 @@ h4{font-size: 15px; color: #383732;}
     list-style: none;}
 .about_under li{
     width: 40%;
-    
+    transition: 0.2s;
     padding-top: 15px;
     padding-left: 10px;
     border-left: 1px solid #46A18D;}
+.about_under li:hover{
+    border-left: 1px solid #2cdbb5;
+    transition: 0.2s;}
 .about_under li h2{
     font-size: 20px; font-weight: 400;}
 .about_under li h3{
@@ -399,10 +429,15 @@ list-style: none;}
     margin-top: 10px;}
 .news .btn-readmore{
     width: 40%;
-    color: #383732;
+    padding-bottom: 5px;
     border-bottom: 1px solid rgb(1, 180, 1);
-    font-size: 12px;
-padding-bottom: 5px;}
+    color: #383732;
+    transition: 0.2s;
+    font-size: 12px;}
+.news .btn-readmore:hover{
+    border-bottom: 1px solid rgb(1, 223, 1);
+    color: #161614;
+    transition: 0.2s;}
 /* Конец блока новости */
 /* Блок подписки */
 .sub{
@@ -423,7 +458,11 @@ padding-bottom: 5px;}
     height: 40px;}
 .sub__form input::placeholder{
     padding-left: 20px;
+    font-family: 'Roanne';
     font-size: 14px;}
+.sub__form input:focus{
+    text-indent:15px;
+    font-family: 'Roanne';  }
 .sub__form .sub-btn{
     width: 30%;
     height: 44px;
@@ -445,3 +484,38 @@ padding-bottom: 5px;}
     color: #1c7965;
     transform: 0.2s;}
 /* Конец блока подписки */
+/* Блок Footer  */
+.footer-bg{
+    background: #2C947D;}
+.footer{
+    height: 180px;}
+.footer__menu{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;}
+.items_item{
+    margin: 10px 0 10px 0;
+    color: white;
+    font-size: 13px;
+    font-weight: 100; }
+.items_item span{
+    color: #DCD6AE;
+    font-size: 14px;}
+.items_item a{
+    color: white;}
+.items_item a:hover{
+    border-bottom: 1px solid #DCD6AE;}
+.footer_items:nth-child(1){
+    height: 100%;
+    width: 25%;}
+.footer_items:nth-child(4){
+    height: 100%;
+    width: 23%;}
+.footer-contact{
+    padding: 9px;
+    border: 1px solid white;
+    background: none;
+    color: white;}
+/* Конец блока Footer */
