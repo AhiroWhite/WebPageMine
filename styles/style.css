@@ -66,7 +66,109 @@ a{color: black; text-decoration: none;}
     font-weight: 100;
     float: right;
 }
+/* Блок корзины */
 
+/* Иконка корзины */
+.shop-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #46A18D;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    transition: 0.2s;}
+.shop-icon:hover{
+    background: #50d6b9;
+    transition: 0.2s;}
+.shop-icon img{
+    width: 50%;
+    transition: 0.2s;}
+.shop-icon:hover img{
+    width: 65%;
+    transition: 0.2s;}
+.shop-icon:active{
+    background: #2f7969;}
+/* Панель корзины */
+
+.shop-panel{
+    width: 250px;
+    height: auto;
+    background: white;
+    display: none;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;}
+.shop-panel h1{
+    height: auto;
+    padding: 10px 0 10px 0;
+    background: #2C947D;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;}
+.shop-panel h2{
+    height: auto;
+    padding: 5px 0 10px 10px;
+    font-size: 10px;
+    color: #a15146;}
+.shop-panel .shop-panel-item{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    float: left;}
+.shop-panel .itemname{
+    width: auto;
+    max-width: 60%;
+    height: auto;
+    margin: 10px 0 10px 10px;
+    border: none;
+    font-size: 11px;
+    color: #3a3935;
+    float: left;}
+.shop-panel .itemprice{
+    width: auto;
+    height: 20px;
+    margin: 10px 15px 10px 0;
+    border: none;
+    color: #1c7965;
+    float: right;}
+.shop-panel-order{
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    float: left; }
+.shop-panel-order-text{
+    width: auto;
+    height: auto;
+    color: #3a3935;
+    font-size: 18px;
+    float: left;}
+.shop-panel-order-itog{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    color: #1c7965;
+    float: right;}
+
+.oplata{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px 0 10px 0;
+    background: #1c7965;
+    text-align: center;
+    color: white;
+    display: none;
+    transition: 0.2s;
+    float: right;}
+.oplata:hover{
+    background: #135244;
+    transition: 0.2s;}
+/* Конец блока коризны */
 /* Блок обратного звонка */
 .recallbg{
     width:100vw;
@@ -149,7 +251,7 @@ a{color: black; text-decoration: none;}
 .header{
     width: 100%;
     height: 60px;
-    padding: 5px 0 5px 0;
+    padding: 0 0 10px 0;
     box-shadow: 0px 1px 2px rgb(224, 224, 224);
     color: #54524C;
     float: left;}
@@ -160,8 +262,10 @@ a{color: black; text-decoration: none;}
     justify-content: space-between;
     align-items: center;}
 .header__logo{
+    position: block;
     width: 10%;
-    height: 100%;}
+    align-self: flex-end;
+}
 .header__logo img{
     margin-top: 0 auto;
     max-width: 100%;}
@@ -361,12 +465,14 @@ list-style: none;}
     height: 30px;
     margin-top: 10px;
     border: 1px solid #46A18D;
-    font-size: 25px;
-    
+    font-size: 12px;
     transition: 0.2s;
     font-weight: 100;
     color: #46A18D;
     float: right;}
+.price .btn-add .btn-add-text{
+    transform: rotate(45deg);
+}
 .price .btn-add:hover{
     background:#46A18D;
     color: white;

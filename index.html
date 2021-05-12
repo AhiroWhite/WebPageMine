@@ -5,12 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sokin</title>
+    <title>Su</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="img/лого.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/shorticon.png" type="image/x-icon">
 </head>
 
 <body>
+    <div class="shop-icon center-all" onclick="shopicon()">
+        <img src="img/shopicon.png" alt="">
+    </div>
+    <div class="shop-panel">
+        <h1 class="center-all">Ваши покупки</h1>
+        <h2 id="limit">* Максимальный размер корзины 5 пунктов:</h2>
+        <ul>
+            <li class="shop-panel-item shop-item1">
+               <div class="itemname itemname1 "></div>
+               <div class="itemprice itemprice1 "></div>
+            </li>
+            <li class="shop-panel-item shop-item2 ">
+                <div class="itemname itemname2 "></div>
+                <div class="itemprice itemprice2"></div>
+             </li>
+            <li class="shop-panel-item shop-item3">
+                <div class="itemname itemname3 "></div>
+                <div class="itemprice itemprice3 "></div>
+            </li>
+            <li class="shop-panel-item shop-item4">
+                <div class="itemname itemname4 ">123</div>
+                <div class="itemprice itemprice4 ">123</div>
+            </li>
+            <li class="shop-panel-item shop-item5">
+                <div class="itemname itemname5">123</div>
+                <div class="itemprice itemprice5 ">123</div>
+            </li>
+            <li class="shop-panel-item"></li>
+        </ul>
+        <div class="shop-panel-order">
+            <div class="shop-panel-order-text ">Итог к оплате:</div>
+            <div class="shop-panel-order-itog"></div>
+        </div>
+        <div class="oplata">
+            Оплатить
+        </div>
+    </div>
     <!-- блок обратного звонка -->
     <div class="recallbg">
         <div class="wrapper recall">
@@ -34,7 +71,7 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__logo">
-                <img src="img/лого.png" alt="">
+                <img src="img/logo.png" alt="">
             </div>
             <div class="header__menu">
                 <ul>
@@ -52,7 +89,7 @@
                     </a>
                 </ul>
             </div>
-            <div class="header__phone">+7 (029) 153 11 47</div>
+            <div class="header__phone">+7 (029) xxx xx xx</div>
             <div class="header__contact">
                 <a href="#" onclick="racallopen()">Обратный звонок</a>
             </div>
@@ -103,34 +140,34 @@
                     <span></span>
                     <div class="price">
                         <a href="">420р</a>
-                        <div class="btn-add center-all">+</div>
+                        <div class="btn-add center-all" onclick="point1('Ночной крем с маслом шиповника',420)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 <li>
                     <img src="img/first2.jpg"   alt="">
-                    <h3>Ночной крем с маслом шиповника</h3>
+                    <h3>Ночной крем</h3>
                     <span></span>
                     <div class="price">
-                        <a href="">420р</a>
-                        <div class="btn-add center-all">+</div>
+                        <a href="">370р</a>
+                        <div class="btn-add center-all" onclick="point1('Ночной крем',370)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 <li >
                     <img src="img/first2.jpg"  alt="">
-                    <h3>Ночной крем с маслом шиповника</h3>
+                    <h3>Органическое масло шиповника</h3>
                     <span></span>
                     <div class="price">
-                        <a href="">420р</a>
-                        <div class="btn-add center-all">+</div>
+                        <a href="">210р</a>
+                        <div class="btn-add center-all" onclick="point1('Органическое масло шиповника',210)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 <li >
                     <img src="img/first2.jpg" alt="">
-                    <h3>Ночной крем с маслом шиповника</h3>
+                    <h3>Серум для области вокруг глаз</h3>
                     <span></span>
                     <div class="price">
-                        <a href="">420р</a>
-                        <div class="btn-add center-all">+</div>
+                        <a href="">322р</a>
+                        <div class="btn-add center-all" onclick="point1('Серум для области вокруг глаз',322)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 
@@ -146,7 +183,7 @@
                 <h1>Философия нашего бренда</h1>
                 <h5>
                     <p>
-                        Наша косметика не только чистая но и действенная <br> 
+                        Наша косметика не только чистая, но и действенная <br> 
                         Мы разработали особый биохимический подход, <br>
                         В каждом средстве содержатся природные<br>
                         ингредиенты, эффективность которых доказана <br>
@@ -174,13 +211,13 @@
                 <li>
                     <h2>Только натуральные составы</h2>
                     <h3>
-                        Мягкое воздействие на кожу. <br>
+                        Мягкое воздействие на кожу,<br>
                         без нарушений кислотно-щелочного <br>
                         баланса.
                     </h3>
                 </li>
                 <li>
-                    <h2>Свое Производство</h2>
+                    <h2>Свое производство</h2>
                     <h3>
                         Позволяет отследить и контролировать <br>
                         весь цикл изготовления.
@@ -209,16 +246,16 @@
                     <span></span>
                     <div class="price">
                         <a href="">280р</a>
-                        <div class="btn-add center-all">+</div>
+                        <div class="btn-add center-all" onclick="point1('Крем для сухой кожи',280)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 <li>
                     <img src="img/first1.jpg" width="100%" alt="">
-                    <h3>Органический тонер мист без парабенов и алкоголя</h3>
+                    <h3>Органический тонер мист</h3>
                     <span></span>
                     <div class="price">
                         <a href="">250р</a>
-                        <div class="btn-add center-all">+</div>
+                        <div class="btn-add center-all" onclick="point1('Органический тонер мист',250)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 <li>
@@ -227,7 +264,7 @@
                     <span></span>
                     <div class="price">
                         <a href="">420р</a>
-                        <div class="btn-add center-all">+</div>
+                        <div class="btn-add center-all" onclick="point1('Ночной крем с маслом шиповника',420)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 <li class="lastli">
@@ -236,7 +273,7 @@
                     <span></span>
                     <div class="price">
                         <a href="">150р</a>
-                        <div class="btn-add center-all">+</div>
+                        <div class="btn-add center-all" onclick="point1('Очищающий крем',150)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 
@@ -246,7 +283,7 @@
                     <span></span>
                     <div class="price">
                         <a href="">350р</a>
-                        <div class="btn-add center-all">+</div>
+                        <div class="btn-add center-all" onclick="point1('Ночной крем',350)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 <li>
@@ -255,7 +292,7 @@
                     <span ></span>
                     <div class="price">
                         <a href="">250р</a>
-                        <div class="btn-add center-all">+</div>
+                        <div class="btn-add center-all" onclick="point1('Серум для области вокруг глаз',250)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 <li>
@@ -264,7 +301,7 @@
                     <span></span>
                     <div class="price">
                         <a href="">400р</a>
-                        <div class="btn-add center-all">+</div>
+                        <div class="btn-add center-all" onclick="point1('Органическое масло шиповника для жирной и комбинированной кожи',400)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
                 <li class="lastli">
@@ -273,7 +310,7 @@
                     <span></span>
                     <div class="price">
                         <a href="">180р</a>
-                        <div class="btn-add center-all">+</div>
+                        <div class="btn-add center-all" onclick="point1('Мицелярная вода',180)"><div class="btn-add-text">&#10006;</div></div>
                     </div>
                 </li>
 
@@ -290,16 +327,16 @@
                         <span></span>
                         <div class="price">
                             <a href="">280р</a>
-                            <div class="btn-add center-all">+</div>
+                            <div class="btn-add center-all" onclick="point1('Крем для сухой кожи',280)"><div class="btn-add-text">&#10006;</div></div>
                         </div>
                     </li>
                     <li>
                         <img src="img/first1.jpg" width="100%" alt="">
-                        <h3>Органический тонер мист без парабенов и алкоголя</h3>
+                        <h3>Органический тонер мист</h3>
                         <span></span>
                         <div class="price">
                             <a href="">250р</a>
-                            <div class="btn-add center-all">+</div>
+                            <div class="btn-add center-all" onclick="point1('Органический тонер мист',250)"><div class="btn-add-text">&#10006;</div></div>
                         </div>
                     </li>
                     <li>
@@ -308,7 +345,7 @@
                         <span></span>
                         <div class="price">
                             <a href="">420р</a>
-                            <div class="btn-add center-all">+</div>
+                            <div class="btn-add center-all" onclick="point1('Ночной крем с маслом шиповника',420)"><div class="btn-add-text">&#10006;</div></div>
                         </div>
                     </li>
                     <li class="lastli">
@@ -317,7 +354,7 @@
                         <span></span>
                         <div class="price">
                             <a href="">150р</a>
-                            <div class="btn-add center-all">+</div>
+                            <div class="btn-add center-all" onclick="point1('Очищающий крем',150)"><div class="btn-add-text">&#10006;</div></div>
                         </div>
                     </li>
                     
@@ -327,7 +364,7 @@
                         <span></span>
                         <div class="price">
                             <a href="">350р</a>
-                            <div class="btn-add center-all">+</div>
+                            <div class="btn-add center-all" onclick="point1('Ночной крем',350)"><div class="btn-add-text">&#10006;</div></div>
                         </div>
                     </li>
                     <li>
@@ -336,7 +373,7 @@
                         <span ></span>
                         <div class="price">
                             <a href="">250р</a>
-                            <div class="btn-add center-all">+</div>
+                            <div class="btn-add center-all" onclick="point1('Серум для области вокруг глаз',250)"><div class="btn-add-text">&#10006;</div></div>
                         </div>
                     </li>
                     <li>
@@ -345,7 +382,7 @@
                         <span></span>
                         <div class="price">
                             <a href="">400р</a>
-                            <div class="btn-add center-all">+</div>
+                            <div class="btn-add center-all" onclick="point1('Органическое масло шиповника для жирной и комбинированной кожи',400)"><div class="btn-add-text">&#10006;</div></div>
                         </div>
                     </li>
                     <li class="lastli">
@@ -354,7 +391,7 @@
                         <span></span>
                         <div class="price">
                             <a href="">180р</a>
-                            <div class="btn-add center-all">+</div>
+                            <div class="btn-add center-all" onclick="point1('Мицелярная вода',180)"><div class="btn-add-text">&#10006;</div></div>
                         </div>
                     </li>
                 </div>
@@ -377,20 +414,20 @@
                 <li >
                     <img src="img/news1.png" width="100%" alt="" >
                     <h4>Новая линейка по уходу за кожей склонной к куперозу</h4>
-                    <h5>Разработанная нашими экспертами специальная формула которая позволяет более эффективно бороться куперозом...</h5>
-                    <div class="btn-readmore" style="margin-top: 30px;">Читать полностью</div>
+                    <h5>Разработанная нашими экспертами специальная формула, которая позволяет более эффективно бороться куперозом...</h5>
+                    <div class="btn-readmore" style="margin-top: 30px;">Читать полностью...</div>
                 </li>
                 <li >
                     <img src="img/news2.png" width="100%" alt="" >
                     <h4>Парфюмированные продукты для тела</h4>
                     <h5>Мы пытаемся улучшить наши продукты и сделать их более приятными для вашего использования, для этого мы специально...</h5>
-                    <div class="btn-readmore" style="margin-top: 13px;">Читать полностью</div>
+                    <div class="btn-readmore" style="margin-top: 13px;">Читать полностью...</div>
                 </li>
                 <li >
                     <img src="img/news3.png" width="100%" alt="" >
                     <h4>Раздаем подарки</h4>
-                    <h5>Весь следующий месяц мы проводим конкурс по результатам которого мы подарим пять наборов нашей...</h5>
-                    <div class="btn-readmore" style="margin-top: 56px;">Читать полностью</div>
+                    <h5>Весь следующий месяц мы проводим конкурс, по результатам которого мы подарим пять наборов нашей...</h5>
+                    <div class="btn-readmore" style="margin-top: 56px;">Читать полностью...</div>
                 </li>
             </ul>
         </div>
@@ -407,7 +444,7 @@
                     <input type="button" class="sub-btn" value="Подписаться" onclick="sub()">
                 </form>
              </div>
-            <h4 style="font-size: 13px;">Оформаляя подписку, вы соглашаетесь с условием <span>Политики обработки персональных данных</span>.</h4>
+            <h4 style="font-size: 13px;">Оформляя подписку, вы соглашаетесь с условием <span>Политики обработки персональных данных</span>.</h4>
         </div>
     </div>
     <!-- конец блока подписка -->
@@ -419,8 +456,7 @@
                     <div class="items_item"><img width="50%" src="img/лого.png" alt=""></div>
                     <div class="items_item">Офис склад:</div>
                     <div class="items_item">
-                        <span>г.Пенза пр.Строителей. дом152-б</span><br>
-                        ТРЦ Берлин, 1 этаж
+                        <span>г.Пенза пр.Строителей. дом xx-x</span><br>
                     </div>
                     <div class="items_item">
                         <span>9:00-19:00</span>, без выходных
@@ -434,8 +470,8 @@
                 </li>
                 <li class="footer_items ">
                     <div class="items_item">Оставайтесь на связи</div>
-                    <div class="items_item"><span>8 033 153 11 47</span></div>
-                    <div class="items_item"><span>8 029 153 11 47</span></div>
+                    <div class="items_item"><span>8 033 xxx xx xx</span></div>
+                    <div class="items_item"><span>8 029 xxx xx xx</span></div>
                     <div class="items_item">
                         <div class="footer-contact center-all">
                             <a href="#footer" onclick="racallopen()" style="border-bottom: 0;">Обратный звонок</a>
@@ -443,12 +479,7 @@
                     </div>
                 </li>
                 <li class="footer_items">
-                    <div class="items_item">
-                        Принимаем к оплате: <br>
-                        <img src="img/png1.PNG" alt="" width="25%">
-                        <img src="img/png2.PNG" alt="" width="25%">
-                    </div>
-                    <div class="items_item">@ Sukin Australia - 2021. All right reserved</div>
+                    <div class="items_item">@ Su Australia - 2021. All right reserved</div>
                 </li>
             </ul>
         </div>

@@ -1,3 +1,95 @@
+// Скрипт Корзины
+let shopicon = function(){
+    $('.shop-icon').hide(300);
+    $('.shop-panel').show(1);
+    $('.shop-panel').fadeTo(0,0).fadeTo(400,1);
+}
+
+
+let order;
+let pricepoint1 = 0;
+let pricepoint2 = 0;
+let pricepoint3 = 0;
+let pricepoint4 = 0;
+let pricepoint5 = 0;
+let priceall = 0;
+var price1 = 0;
+var price2 = 0;
+var price3 = 0;
+var price4 = 0;
+var price5 = 0;
+let point1 = function (name,price) {
+    if(pricepoint1 == 0){
+        $('.itemname1').text(name);
+        $('.itemprice1').text(price + " руб.");
+        pricepoint1 = 1;
+        price1 = price;
+        priceall = price1;
+        $('.shop-item1').css('display','flex');
+        $('.shop-item1').slideUp(0).slideDown(300);
+        $('.shop-icon').css('background','#a15146');
+        $('.shop-panel-order-itog').text(priceall + " руб.");
+        $('.oplata').show(0);
+        $('.oplata').slideUp(0).slideDown(300)
+    }else{
+        if(pricepoint2 == 0){
+        $('.itemname2').text(name);
+        $('.itemprice2').text(price + " руб.");
+        $('.shop-item2').css('display','flex');
+        $('.shop-item2').slideUp(0).slideDown(300);
+        pricepoint2 = 1;
+        price2 = price;
+        priceall = price1 + price2;
+        $('.shop-panel-order-itog').text(priceall + " руб.");
+        }else{
+            if(pricepoint3 == 0){
+                $('.itemname3').text(name);
+                $('.itemprice3').text(price + " руб.");
+                $('.shop-item3').css('display','flex');
+                $('.shop-item3').slideUp(0).slideDown(300);
+                pricepoint3 = 1;
+                price3 = price;
+                priceall = price1 + price2 + price3;
+                console.log(priceall);
+                $('.shop-panel-order-itog').text(priceall + " руб.");
+                 
+            }else{
+                if(pricepoint4 == 0){
+                    $('.itemname4').text(name);
+                    $('.itemprice4').text(price + " руб.");
+                    $('.shop-item4').css('display','flex');
+                    $('.shop-item4').slideUp(0).slideDown(300);
+                    pricepoint4 = 1;
+                    price4 = price;
+                    priceall = price1 + price2 + price3 + price4;
+                    console.log(priceall); 
+                    $('.shop-panel-order-itog').text(priceall + " руб.");
+                }else{
+                    if(pricepoint5 == 0){
+                        $('.itemname5').text(name);
+                        $('.itemprice5').text(price + " руб.");
+                        $('.shop-item5').css('display','flex');
+                        $('.shop-item5').slideUp(0).slideDown(300);
+                        pricepoint5 = 1;
+                        price5 = price;
+                        priceall = price5 + price1 + price2 + price3 + price4;
+                        console.log(priceall); 
+                        $('.shop-panel-order-itog').text(priceall + " руб.");
+                    }else{
+                        $('.shop-icon').hide(300);
+                        $('.shop-panel').show(1);
+                        $('.shop-panel').fadeTo(0,0).fadeTo(400,1);
+                        $('#limit').text('* Лимит привышен');
+                        $('#limit').css('color','red');
+                        $('#limit').css('font-size','9px');
+                    }
+                }
+            }
+        }
+    }
+}
+
+$('.shop-panel-order-itog').text(priceall);
 // Скрипт подписки
 let sub = function(){
     $('.sub').hide(300);
